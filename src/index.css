@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.todo-form {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    gap: 1rem;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: hsl(0, 0%, 15%);
+
+    border-bottom: 2px solid hsl(0, 0%, 40%);
+    padding: 1rem;
+}
+
+.todo-form-input {
+    width: clamp(16rem, 16rem + 10vw, 80vw);
+    color: white;
+    background-color: hsl(0, 0%, 40%);
+
+    font-size: 1.5rem;
+
+    border: 2px solid hsl(0, 0%, 75%);
+    border-radius: 8px;
+    padding: 0.3rem 0.6rem;
+}
+
+.todo-submit-btn {
+    color: white;
+    background-color: hsl(0, 0%, 40%);
+
+    font-size: 1.5rem;
+
+    border: 2px solid hsl(0, 0%, 75%);
+    border-radius: 8px;
+    padding: 0.3rem 0.6rem;
+    transition: all 0.2s;
+}
+
+.todo-submit-btn:hover {
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 25%);
+    border-color: hsl(0, 0%, 50%);
+}
+
+.todo-ul {
+    font-size: 1.25rem;
+
+    display: grid;
+    gap: 0.8rem;
+
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+.todo-li {
+    display: flex;
+    gap: 1rem;
+}
+
+.todo-delete-btn {
+    font-size: 1.25rem;
+
+    color: white;
+    background-color: hsl(0, 83%, 43%);
+
+    border: none;
+    border-radius: 6px;
+}
+
+.todo-delete-btn:hover {
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 82%, 33%);
+}
